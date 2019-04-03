@@ -1,3 +1,11 @@
+body {
+  background-image: url('https://images.unsplash.com/photo-1526785171760-93f599d33bc9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
 .App {
   text-align: center;
 }
@@ -9,25 +17,59 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #333;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-list {
+  background-color: yellow;
+  width: 300px;
+  text-align: left;
+  padding: 10px 30px;
+  /* min-height: 150px; */
+  margin: 50px;
+  /* display: inline-block;
+  align-content: top; */
+  align-self: flex-start;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.todo {
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: lightslategray;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+input {
+  padding: 5px;
+}
+
+button {
+  padding: 5px 15px;
 }
